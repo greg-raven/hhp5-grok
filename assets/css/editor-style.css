@@ -1,0 +1,53 @@
+body
+{
+	font-family: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052, serif;
+	color: black;
+}
+
+h1, h2, h3, h4, h5, h6,
+.breadcrumb, .lead, .navigation, .panel-heading { font-family: Optima, Candara, "Noto Sans", source-sans-pro, sans-serif; }
+
+h5, h6
+{
+	font-size: 17.5px;
+	font-weight: 700;
+	text-align: center;
+}
+
+p, li, dl
+{
+	font-size: 17.5px;
+	line-height: 1.5;
+}
+
+/* Green top border on footer area */
+.wp-block-template-part[data-slug="footer"]
+{
+	border-top: 1px solid green;
+	padding-top: 1em;
+}
+
+/* Blockquotes - matching your existing italic cite style */
+.wp-block-quote
+{
+	font-style: italic;
+	border-left: 4px solid green;
+	padding-left: 1em;
+}
+
+cite { font-style: italic; }
+dt { margin-top: 1em; }
+dd { margin-left: 1em; }
+q { quotes: "\201C" "\201D" "\2018" "\2019"; }
+q::before { content: open-quote; }
+q::after { content: close-quote; }
+
+sub, sup, .footnote
+{
+	font-size: smaller;
+	vertical-align: baseline;
+	position: relative;
+}
+
+sup, .footnote { bottom: 0.33em; }
+sub { bottom: -0.25em; }

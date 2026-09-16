@@ -1,0 +1,70 @@
+{
+  "version": 3,
+  "settings": {
+    "color": {
+      "palette": [
+        { "name": "Black", "slug": "black", "color": "#000000" },
+        { "name": "White", "slug": "white", "color": "#ffffff" },
+        { "name": "Green", "slug": "green", "color": "#008000" },
+        { "name": "Maroon", "slug": "maroon", "color": "#800000" },
+        { "name": "Gray", "slug": "gray", "color": "#808080" },
+        { "name": "Link Hover Yellow", "slug": "link-hover", "color": "#ffff99" },
+        { "name": "Red", "slug": "red", "color": "#ff0000" }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "name": "Body Serif",
+          "slug": "body-serif",
+          "fontFamily": "\"Iowan Old Style\", \"Palatino Linotype\", \"URW Palladio L\", P052, serif"
+        },
+        {
+          "name": "Heading Sans",
+          "slug": "heading-sans",
+          "fontFamily": "Optima, Candara, \"Noto Sans\", source-sans-pro, sans-serif"
+        }
+      ],
+      "fontSizes": [
+        { "name": "Small", "slug": "small", "size": "14px" },
+        { "name": "Normal", "slug": "normal", "size": "17.5px" },
+        { "name": "Large", "slug": "large", "size": "21px" }
+      ]
+    },
+    "spacing": {
+      "units": ["px", "em", "%"]
+    },
+    "layout": {
+      "contentSize": "780px",
+      "wideSize": "1100px"
+    }
+  },
+  "styles": {
+    "color": {
+      "text": "#000000",
+      "background": "#ffffff"
+    },
+    "typography": {
+      "fontFamily": "\"Iowan Old Style\", \"Palatino Linotype\", \"URW Palladio L\", P052, serif",
+      "fontSize": "17.5px",
+      "lineHeight": "1.5"
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontFamily": "Optima, Candara, \"Noto Sans\", source-sans-pro, sans-serif"
+        }
+      },
+      "link": {
+        "color": {
+          "text": "#808080"
+        },
+        ":hover": {
+          "color": {
+            "text": "#0000ff"
+          }
+        }
+      }
+    }
+  }
+}

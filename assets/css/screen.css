@@ -1,0 +1,218 @@
+/*
+Theme Name: HHP5
+Theme URI: https://www.historiography-project.org
+Author: Claude
+Author URI: https://claude.ai
+Description: HHP5 is the result of running our ancient handbuilt theme through Claude.
+Requires at least: 6.7
+Tested up to: 6.9
+Requires PHP: 8.0
+Version: 4.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: hhp5
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
+*/
+
+/*
+ * IMPORTANT: This file is only served on the frontend when `SCRIPT_DEBUG` is enabled;
+ * in most instances, the `style.min.css` file will be served. It is not recommended that you
+ * use the Theme File Editor to modify this stylesheet. Instead, add the necessary style
+ * overrides via "Additional CSS" in the Site Editor.
+ */
+
+/*
+ * Link styles
+ * https://github.com/WordPress/gutenberg/issues/42319
+ */
+
+body
+{
+	color: black;
+	font-family: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052, serif;
+}
+
+caption
+{
+	font-family: Optima, Candara, "Noto Sans", source-sans-pro, sans-serif;
+	text-align: center;
+}
+
+h1, h2, h3, .breadcrumb, .lead, .navigation, .panel-heading { font-family: Optima, Candara, "Noto Sans", source-sans-pro, sans-serif; }
+
+h4
+{
+	font-family: Optima, Candara, "Noto Sans", source-sans-pro, sans-serif;
+	font-weight: bold;
+}
+
+h5
+{
+	font-family: Optima, Candara, "Noto Sans", source-sans-pro, sans-serif;
+	font-size: 17.5px;
+	font-weight: 700;
+	text-align: center;
+}
+
+h6
+{
+	font-family: Optima, Candara, "Noto Sans", source-sans-pro, sans-serif;
+	font-size: 17px;
+	font-weight: 700;
+	text-align: center;
+}
+
+article p, article li, article dl
+{
+	font-size: 17.5px;
+	line-height: 1.5;
+}
+
+cite { font-style: italic; }
+dt { margin-top: 1em; }
+dd { margin-left: 1em; }
+
+figure, iframe, object
+{
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+form { padding-bottom: 1em; }
+
+input.search-submit
+{
+	-webkit-appearance: none;
+	appearance: none;
+	color: white;
+	background-color: #337ab7;
+}
+
+q { quotes: "“" "”" "‘" "’"; }
+q::before { content: open-quote; }
+q::after { content: close-quote; }
+
+sub, sup, .footnote
+{
+	font-size: smaller;
+	vertical-align: baseline;
+	position: relative;
+}
+
+sup, .footnote { bottom: 0.33em; }
+sub { bottom: -0.25em; }
+.breadcrumb { margin-top: 1em; }
+.embed-responsive { margin-bottom: 1em; }
+.entry-footer, .entry-meta { padding-bottom: 1em; }
+
+.footer
+{
+	border-color: green;
+	border-width: 1px 0 0 0;
+	border-style: solid none none none;
+	padding-top: 1em;
+}
+
+.header
+{
+	border-bottom: green;
+	border-style: none none solid none;
+	border-width: 0 0 1px 0;
+	text-align: center;
+}
+
+.indent
+{
+	padding: 1em 2em 1em 2em;
+	text-align: center;
+}
+
+.linker
+{
+	text-align: center;
+	font-weight: bold;
+	font-size: .9em;
+	padding-bottom: 1em;
+}
+
+.navigation a
+{
+	color: gray;
+	background-color: white;
+	font-size: 100%;
+	text-decoration: none;
+	margin: 0;
+	padding: 1px 5px 1px 10px;
+	border-left: 1px solid green;
+	display: block;
+}
+
+.navigation h4
+{
+	color: maroon;
+	font-weight: bold;
+	font-size: 100%;
+	background-color: transparent;
+	margin: 0;
+	padding: 1em 5px 0 2px;
+	border-bottom: 1px solid green;
+	border-left: 1px solid green;
+}
+
+.navigation a:hover
+{
+	color: blue;
+	background-color: #ff9;
+	padding-left: 7px;
+	border-left: 4px solid maroon;
+}
+
+.navigation a#comment
+{
+	border-style: solid;
+	border-width: 1px 1px 1px 4px;
+	border-color: rgb(60%, 48%, 40%);
+	background-color: #ffeae5;
+	color: black;
+	padding-left: 7px;
+}
+
+.pdf, #pdf, .scribd_iframe_embed
+{
+	height: 600px;
+	width: 100%;
+}
+
+.pressac { padding-left: 1em; }
+.pull-left { margin-right: 1em; }
+.pull-right { margin-left: 1em; }
+
+#redvols
+{
+	color: red;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#redvols a
+{
+	color: red;
+	text-decoration: none;
+}
+
+/* back to top */
+#top-link-block.affix-top
+{
+	position: absolute;
+	/* allows it to "slide" up into view */
+	bottom: -82px;
+	right: 1em;
+}
+
+#top-link-block.affix
+{
+	position: fixed;
+	/* keeps it on the bottom once in view */
+	bottom: 60px;
+	right: 1em;
+}
