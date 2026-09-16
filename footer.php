@@ -1,16 +1,19 @@
 <?php
 /**
- * The template for displaying the footer
- *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ * Close the content column, print chrome that belongs after it, end the document.
  *
  * @package hhp
  */
-
-get_template_part( 'inc/hhpfooter');
-
 ?>
+            </div><!-- #content -->
+        </div><!-- /.col-md-7 -->
+
+        <?php get_sidebar(); ?>
+        <?php get_template_part( 'inc/hhpnav' ); ?>
+
+    </div><!-- /.row -->
+</div><!-- /.container-fluid -->
+
+<?php get_template_part( 'inc/hhpfooter' ); ?>
 </body>
 </html>
